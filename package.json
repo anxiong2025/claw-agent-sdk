@@ -1,0 +1,58 @@
+{
+  "name": "claw-agent-sdk",
+  "version": "0.1.0",
+  "description": "Universal AI Agent SDK for TypeScript — multi-model support with built-in tools, powered by any LLM.",
+  "keywords": [
+    "agent",
+    "ai",
+    "sdk",
+    "llm",
+    "tool-calling",
+    "qwen",
+    "deepseek",
+    "openai",
+    "claude",
+    "gemini",
+    "typescript"
+  ],
+  "author": "andrewho95",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anxiong2025/claw-agent-sdk"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
